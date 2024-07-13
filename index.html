@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Grocer HQ | Your One Stop Grocery Shop</title>
-</head>
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-<body>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"/>
 
-    <section class="hero-section">
-        <div class="columns">
-            <div class="first-column">
-                <img src="/images/logo.png" alt="Grocer HQ Logo">
-                <h1 class="title">Your One Stop <span>Grocery</span> Shop</h1>
-                <h3 class="sub-title">Big things are coming to Soweto! Grocer HQ is getting a fresh look and an even
-                    better way to get your groceries delivered straight to your door. <br><br> Want early access and
-                    exclusive offers? Sign up for our waiting list now!</h3>
-                <div class="wait-list">
-                    <form id="form" method="POST">
-                        <input class="input-fields" type="text" name="Suburb" id="location"
-                            placeholder="Suburb & City" required>
-                        <input class="input-fields" type="email" name="Email" id="email"
-                            placeholder="Email Address" required>
-                        <input class="input-btn" type="submit" id="submit-button" value="Join Our Waitlist">
-                    </form>
-                    <div id="message"></div>
+        <!--========== Analytics ==========-->
+        <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,id:"19e65e3d-3ef0-4f87-87d3-10dfd2e9c5b8",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>
+
+        <title>Grocer HQ</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Grocer HQ</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -231,7 +240,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; © 2022 All Rights Reserved. Design by Grocer HQ</p>
+            <p class="footer__copy">&#169; 2022 All Rights Reserved. Design by Grocer HQ</p>
         </footer>
 
         <!--========== SCROLL REVEAL ==========-->
